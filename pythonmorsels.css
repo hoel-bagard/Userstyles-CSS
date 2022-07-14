@@ -1,0 +1,259 @@
+/* ==UserStyle==
+@name         Python Morsels Dark Breeze
+@version      0.1.0
+@namespace    userstyles.world/user/ara
+@description  Dark Theme for Python Morsels
+@author       Hoel
+@license      MIT
+==/UserStyle== */
+
+
+@-moz-document domain("www.pythonmorsels.com") {
+  :root
+  {
+      --main-bg-color: hsl(213, 10%, 17%);
+      --main-fg-color: #bbb;
+      --light-bg-color: hsl(213, 10%, 23%);
+      --light-fg-color: #ccc;
+      --lighter-bg-color: hsl(213, 10%, 29%);
+      --lighter-fg-color: #ddd;
+      --highlight-bg-color: hsl(213, 10%, 35%);
+      --highlight-fg-color: #eee;
+
+      --code-background-color: #292B2E;
+      --code-darker-background-color: #212026;
+      --code-base-color: #B2B1AE;  /* code without color */
+      --code-keyword-color: #4F97D7;  /* def, self, etc... */
+      --code-string-color: #2D9367;
+      --code-value-color: #A15BAD;  /* int, None, etc...*/
+      --code-red-color: #CE537A;  /* decorators, errors */
+      --code-function-def-color: #BC6EC5;
+      --code-docstring-color: #9F8766;
+  }
+
+  body, html {
+      background: var(--main-bg-color);
+      color: var(--main-fg-color);
+  }
+
+  .bg-light {
+      background-color: var(--light-bg-color) !important;
+      color: var(--main-fg-color);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+      color: var(--main-fg-color);
+  }
+
+  .navbar-light .navbar-nav .active>.nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show>.nav-link {
+      color: var(--lighter-fg-color);
+  }
+
+  .table {
+      color: var(--main-fg-color);
+  }
+
+  .table td, .table th {
+      border-top-color: var(--light-bg-color);
+  }
+
+  .table thead th {
+      border-bottom-color: var(--light-bg-color);
+  }
+
+  .nav-tabs {
+      border-bottom-color: var(--light-bg-color);
+  }
+
+  .card {
+      background-color: var(--light-bg-color);
+  }
+
+  .text-body {
+      color: var(--main-fg-color) !important;
+  }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+      color: var(--main-fg-color);
+      background-color: var(--main-bg-color); 
+      border-color: var(--lighter-bg-color) var(--lighter-bg-color) var(--main-bg-color);
+  }
+
+  .table-hover tbody tr:hover {
+      color: var(--main-fg-color);
+      background-color: var(--lighter-bg-color);
+  }
+
+  .nav-tabs .nav-link:focus,
+  .nav-tabs .nav-link:hover {
+      border-color: var(--light-bg-color) var(--light-bg-color) var(--light-fg-color);
+      border-bottom-color: var(--lighter-bg-color);
+  }
+
+  a:hover {
+      color: #007db3;
+      text-decoration: underline;
+  }
+
+  .form-control {
+      background-color: var(--light-bg-color);
+      border-color: var(--lighter-bg-color);
+      color: var(--main-fg-color);
+  }
+
+  .form-control:focus {
+      background-color: var(--lighter-bg-color);
+      color: var(--main-fg-color);
+  }
+
+
+
+  /* || Solve exercise page */
+  #results-table { color: white !important; }
+  .table-success { background-color: #28a745; }
+  .table-danger { background-color: #ff6070; }
+
+  /* ||| Solve exercise page: main */
+  /* Text editor */
+  .monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input { background-color: var(--code-background-color); }
+  .monaco-editor .margin { background-color: var(--code-darker-background-color); }
+  .codehilite { background: var(--code-background-color); }
+  .monaco-editor .line-numbers.active-line-number { color: var(--light-fg-color); }
+
+  /* ||| Solve exercise page: Test Failures */
+  pre { color: var(--main-fg-color); }
+
+
+
+  /* || Screencasts & Python Articles page */
+  .badge-light {
+      color: #3b9dff !important;
+      background-color: var(--lighter-bg-color);
+  }
+  .list-group-item-action { color: var(--main-fg-color); }
+  .list-group-item { background-color: var(--light-bg-color); }
+  .list-group-item-action:focus, .list-group-item-action:hover {
+      color: var(--highlight-fg-color); 
+      background-color: var(--highlight-bg-color);
+  }
+
+  .table td, .table th {
+      border-top-color: var(--lighter-bg-color);
+  }
+
+
+  /* || Code colors */
+  /* ||| Code colors for the user's solution */
+  .mtk1 { color: var(--code-base-color); }
+  .mtk6 { color: var(--code-keyword-color); }
+  .mtk7 { color: var(--code-value-color); }
+  .mtk14 { color: var(--code-red-color); }
+
+  /* ||| Code colors for the explanations */
+  .codehilite .sd, .codehilite .s2 { color: var(--code-string-color); }
+  .codehilite .nf { color: var(--code-function-def-color); font-weight: bold; }
+  .codehilite .k { color: var(--code-keyword-color); font-weight: bold; }
+  .codehilite .kc { color: var(--code-value-color); font-weight: bold; }
+  .codehilite .p, .codehilite .nb { color: var(--code-keyword-color); }
+  .codehilite .o, .codehilite .sa, .codehilite .si, .codehilite .n, .codehilite .go, .codehilite .gp, .codehilite .gt { color: var(--code-base-color); }
+  .codehilite .nd, .codehilite .gr { color: var(--code-red-color); }
+  code { color: var(--code-base-color) !important; }   /* Some text does not have a class or id */
+
+  /* ||| Code colors for the "View test file" */
+  code[class*="language-"] { background: var(--code-background-color); }
+  .token.keyword { color: var(--code-keyword-color); font-weight: bold; }
+  .token.class-name { color: var(--code-red-color); font-weight: bold; }
+  .triple-quoted-string { color: var(--code-docstring-color) !important; }
+  .token.function  { color: var(--code-function-def-color); font-weight: bold; }
+  .token.punctuation { color: var(--code-base-color); }
+  .token.string { color: var(--code-string-color); }
+  .token.builtin { color: var(--code-keyword-color); }
+  .token.number { color: var(--code-value-color); }
+}
+
+
+@-moz-document domain("www.pythonmorsels.helpscoutdocs.com") {
+  :root
+  {
+      --main-bg-color: hsl(213, 10%, 17%);
+      --main-fg-color: #bbb;
+      --light-bg-color: hsl(213, 10%, 23%);
+      --light-fg-color: #ccc;
+      --lighter-bg-color: hsl(213, 10%, 29%);
+      --lighter-fg-color: #ddd;
+      --highlight-bg-color: hsl(213, 10%, 35%);
+      --highlight-fg-color: #eee;
+      --border-color: #CFCFCF;
+  }
+
+  body, html {
+      background: var(--main-bg-color);
+      color: var(--main-fg-color);
+  }
+
+  .navbar .navbar-inner {
+      background: var(--light-bg-color);
+      color: var(--light-fg-color);
+  }
+
+  .contentWrapper{
+      background: var(--main-bg-color);
+      color: var(--main-fg-color);
+  }
+
+  #fullArticle h1, #fullArticle h2, #fullArticle h3, #fullArticle h4, #fullArticle h5 {
+      color: var(--main-fg-color);
+  }
+  #fullArticle, #fullArticle p, #fullArticle ul, #fullArticle ol, #fullArticle li, #fullArticle div, #fullArticle blockquote, #fullArticle dd, #fullArticle table {
+      color: var(--main-fg-color);
+  }
+  #sidebar h3 {
+      color: var(--main-fg-color);
+  }
+
+  #sidebar .nav-list .active a, #sidebar .nav-list .active a:hover, #sidebar .nav-list .active a:focus {
+      color: var(--highlight-fg-color);
+  }
+
+
+  #sidebar form .search-query {
+      background-color: var(--light-bg-color);
+      border-color: var(--lighter-bg-color);
+      color: var(--main-fg-color);
+  }
+
+  select {
+      background: var(--main-bg-color);
+      color: var(--main-fg-color);
+      border-color: var(--lighter-bg-color);
+  }
+
+  #sidebar .nav-list a:hover, #sidebar .nav-list a:focus {
+      color: var(--highlight-fg-color);
+  }
+
+  .articleRatings {
+      background: var(--main-bg-color);
+      border-color: var(--lighter-bg-color);
+  }
+
+  #fullArticle hr, hr {
+      border-color: var(--lighter-bg-color);
+  }
+
+  #fullArticle strong {
+      color: var(--lighter-fg-color);
+  }
+
+  .category-list h3 {
+      color: var(--light-fg-color);
+  }
+
+  #docsSearch {
+      background: var(--lighter-bg-color);
+      border-color: var(--border-color);
+  }
+}
