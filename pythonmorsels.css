@@ -129,6 +129,19 @@
     border-bottom-color: var(--lighter-bg-color);
   }
 
+  .dropdown-menu.show {
+    background-color: var(--lighter-bg-color) !important;
+  }
+
+  .dropdown-item {
+    color: var(--main-fg-color) !important;
+  }
+
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: var(--highlight-fg-color) !important;
+    background-color: var(--highlight-bg-color) !important;
+  }
+
   a:hover {
     color: #007db3;
     text-decoration: underline;
