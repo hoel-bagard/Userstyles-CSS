@@ -41,6 +41,10 @@
     color: var(--main-fg-color);
   }
 
+  .text-dark, a.text-dark:hover, a.text-dark:focus {
+    color: var(--main-fg-color) !important;
+  }
+
   /* ||| Change the logos */
   .navbar img {
     visibility: hidden;
