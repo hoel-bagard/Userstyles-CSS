@@ -32,15 +32,47 @@
   }
 
   body, html {
-      background: var(--main-bg-color);
-      color: var(--main-fg-color);
+    background: var(--main-bg-color);
+    color: var(--main-fg-color);
   }
 
   .bg-light {
-      background-color: var(--light-bg-color) !important;
-      color: var(--main-fg-color);
+    background-color: var(--light-bg-color) !important;
+    color: var(--main-fg-color);
   }
 
+  /* ||| Change the logos */
+  .navbar img {
+    visibility: hidden;
+  }
+
+  .navbar a:nth-child(2) {
+    background: url(https://raw.githubusercontent.com/hoel-bagard/Userstyles-CSS/f31d884c93fe4651d9c9a3b140442e792534206a/assets/pythonmorsels_logo_white.svg) no-repeat;
+    background-size: contain;
+  }
+
+  a > img.mb-2 {
+    visibility: hidden;
+  }
+
+  footer > div > div > div > a {
+    background: url(https://raw.githubusercontent.com/hoel-bagard/Userstyles-CSS/f31d884c93fe4651d9c9a3b140442e792534206a/assets/pythonmorsels_logo_vertical_white.svg) no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 158px;
+    display: block;
+  }
+
+  body.homepage > div > div > div > div > h1 > img {
+    visibility: hidden;
+  }
+
+  body.homepage > div > div > div > div > h1 {
+    background: url(https://raw.githubusercontent.com/hoel-bagard/Userstyles-CSS/f31d884c93fe4651d9c9a3b140442e792534206a/assets/pythonmorsels_logo_white.svg) no-repeat;
+    background-size: contain;
+  }
+
+  /* Change the navbar */
   .navbar-light .navbar-nav .nav-link {
       color: var(--main-fg-color);
   }
@@ -78,7 +110,7 @@
 
   .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
       color: var(--main-fg-color);
-      background-color: var(--main-bg-color); 
+      background-color: var(--main-bg-color);
       border-color: var(--lighter-bg-color) var(--lighter-bg-color) var(--main-bg-color);
   }
 
