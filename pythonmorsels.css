@@ -11,24 +11,24 @@
 @-moz-document domain("www.pythonmorsels.com") {
   :root
   {
-      --main-bg-color: hsl(213, 10%, 17%);
-      --main-fg-color: #bbb;
-      --light-bg-color: hsl(213, 10%, 23%);
-      --light-fg-color: #ccc;
-      --lighter-bg-color: hsl(213, 10%, 29%);
-      --lighter-fg-color: #ddd;
-      --highlight-bg-color: hsl(213, 10%, 35%);
-      --highlight-fg-color: #eee;
+    --main-bg-color: hsl(213, 10%, 17%);
+    --main-fg-color: #bbb;
+    --light-bg-color: hsl(213, 10%, 23%);
+    --light-fg-color: #ccc;
+    --lighter-bg-color: hsl(213, 10%, 29%);
+    --lighter-fg-color: #ddd;
+    --highlight-bg-color: hsl(213, 10%, 35%);
+    --highlight-fg-color: #eee;
 
-      --code-background-color: #292B2E;
-      --code-darker-background-color: #212026;
-      --code-base-color: #B2B1AE;  /* code without color */
-      --code-keyword-color: #4F97D7;  /* def, self, etc... */
-      --code-string-color: #2D9367;
-      --code-value-color: #A15BAD;  /* int, None, etc...*/
-      --code-red-color: #CE537A;  /* decorators, errors */
-      --code-function-def-color: #BC6EC5;
-      --code-docstring-color: #9F8766;
+    --code-background-color: #292B2E;
+    --code-darker-background-color: #212026;
+    --code-base-color: #B2B1AE;  /* code without color */
+    --code-keyword-color: #4F97D7;  /* def, self, etc... */
+    --code-string-color: #2D9367;
+    --code-value-color: #A15BAD;  /* int, None, etc...*/
+    --code-red-color: #CE537A;  /* decorators, errors */
+    --code-function-def-color: #BC6EC5;
+    --code-docstring-color: #9F8766;
   }
 
   body, html {
@@ -74,71 +74,71 @@
 
   /* Change the navbar */
   .navbar-light .navbar-nav .nav-link {
-      color: var(--main-fg-color);
+    color: var(--main-fg-color);
   }
 
   .navbar-light .navbar-nav .active>.nav-link,
   .navbar-light .navbar-nav .nav-link.active,
   .navbar-light .navbar-nav .nav-link.show,
   .navbar-light .navbar-nav .show>.nav-link {
-      color: var(--lighter-fg-color);
+    color: var(--lighter-fg-color);
   }
 
   .table {
-      color: var(--main-fg-color);
+    color: var(--main-fg-color);
   }
 
   .table td, .table th {
-      border-top-color: var(--light-bg-color);
+    border-top-color: var(--light-bg-color);
   }
 
   .table thead th {
-      border-bottom-color: var(--light-bg-color);
+    border-bottom-color: var(--light-bg-color);
   }
 
   .nav-tabs {
-      border-bottom-color: var(--light-bg-color);
+    border-bottom-color: var(--light-bg-color);
   }
 
   .card {
-      background-color: var(--light-bg-color);
+    background-color: var(--light-bg-color);
   }
 
   .text-body {
-      color: var(--main-fg-color) !important;
+    color: var(--main-fg-color) !important;
   }
 
   .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-      color: var(--main-fg-color);
-      background-color: var(--main-bg-color);
-      border-color: var(--lighter-bg-color) var(--lighter-bg-color) var(--main-bg-color);
+    color: var(--main-fg-color);
+    background-color: var(--main-bg-color);
+    border-color: var(--lighter-bg-color) var(--lighter-bg-color) var(--main-bg-color);
   }
 
   .table-hover tbody tr:hover {
-      color: var(--main-fg-color);
-      background-color: var(--lighter-bg-color);
+    color: var(--main-fg-color);
+    background-color: var(--lighter-bg-color);
   }
 
   .nav-tabs .nav-link:focus,
   .nav-tabs .nav-link:hover {
-      border-color: var(--light-bg-color) var(--light-bg-color) var(--light-fg-color);
-      border-bottom-color: var(--lighter-bg-color);
+    border-color: var(--light-bg-color) var(--light-bg-color) var(--light-fg-color);
+    border-bottom-color: var(--lighter-bg-color);
   }
 
   a:hover {
-      color: #007db3;
-      text-decoration: underline;
+    color: #007db3;
+    text-decoration: underline;
   }
 
   .form-control {
-      background-color: var(--light-bg-color);
-      border-color: var(--lighter-bg-color);
-      color: var(--main-fg-color);
+    background-color: var(--light-bg-color);
+    border-color: var(--lighter-bg-color);
+    color: var(--main-fg-color);
   }
 
   .form-control:focus {
-      background-color: var(--lighter-bg-color);
-      color: var(--main-fg-color);
+    background-color: var(--lighter-bg-color);
+    color: var(--main-fg-color);
   }
 
   .alert-warning {
@@ -176,18 +176,18 @@
 
   /* || Screencasts & Python Articles page */
   .badge-light {
-      color: #3b9dff !important;
-      background-color: var(--lighter-bg-color);
+    color: #3b9dff !important;
+    background-color: var(--lighter-bg-color);
   }
   .list-group-item-action { color: var(--main-fg-color); }
   .list-group-item { background-color: var(--light-bg-color); }
   .list-group-item-action:focus, .list-group-item-action:hover {
-      color: var(--highlight-fg-color); 
-      background-color: var(--highlight-bg-color);
+    color: var(--highlight-fg-color); 
+    background-color: var(--highlight-bg-color);
   }
 
   .table td, .table th {
-      border-top-color: var(--lighter-bg-color);
+    border-top-color: var(--lighter-bg-color);
   }
 
 
@@ -224,82 +224,82 @@
 @-moz-document domain("www.pythonmorsels.helpscoutdocs.com") {
   :root
   {
-      --main-bg-color: hsl(213, 10%, 17%);
-      --main-fg-color: #bbb;
-      --light-bg-color: hsl(213, 10%, 23%);
-      --light-fg-color: #ccc;
-      --lighter-bg-color: hsl(213, 10%, 29%);
-      --lighter-fg-color: #ddd;
-      --highlight-bg-color: hsl(213, 10%, 35%);
-      --highlight-fg-color: #eee;
-      --border-color: #CFCFCF;
+    --main-bg-color: hsl(213, 10%, 17%);
+    --main-fg-color: #bbb;
+    --light-bg-color: hsl(213, 10%, 23%);
+    --light-fg-color: #ccc;
+    --lighter-bg-color: hsl(213, 10%, 29%);
+    --lighter-fg-color: #ddd;
+    --highlight-bg-color: hsl(213, 10%, 35%);
+    --highlight-fg-color: #eee;
+    --border-color: #CFCFCF;
   }
 
   body, html {
-      background: var(--main-bg-color);
-      color: var(--main-fg-color);
+    background: var(--main-bg-color);
+    color: var(--main-fg-color);
   }
 
   .navbar .navbar-inner {
-      background: var(--light-bg-color);
-      color: var(--light-fg-color);
+    background: var(--light-bg-color);
+    color: var(--light-fg-color);
   }
 
   .contentWrapper{
-      background: var(--main-bg-color);
-      color: var(--main-fg-color);
+    background: var(--main-bg-color);
+    color: var(--main-fg-color);
   }
 
   #fullArticle h1, #fullArticle h2, #fullArticle h3, #fullArticle h4, #fullArticle h5 {
-      color: var(--main-fg-color);
+    color: var(--main-fg-color);
   }
   #fullArticle, #fullArticle p, #fullArticle ul, #fullArticle ol, #fullArticle li, #fullArticle div, #fullArticle blockquote, #fullArticle dd, #fullArticle table {
-      color: var(--main-fg-color);
+    color: var(--main-fg-color);
   }
   #sidebar h3 {
-      color: var(--main-fg-color);
+    color: var(--main-fg-color);
   }
 
   #sidebar .nav-list .active a, #sidebar .nav-list .active a:hover, #sidebar .nav-list .active a:focus {
-      color: var(--highlight-fg-color);
+    color: var(--highlight-fg-color);
   }
 
 
   #sidebar form .search-query {
-      background-color: var(--light-bg-color);
-      border-color: var(--lighter-bg-color);
-      color: var(--main-fg-color);
+    background-color: var(--light-bg-color);
+    border-color: var(--lighter-bg-color);
+    color: var(--main-fg-color);
   }
 
   select {
-      background: var(--main-bg-color);
-      color: var(--main-fg-color);
-      border-color: var(--lighter-bg-color);
+    background: var(--main-bg-color);
+    color: var(--main-fg-color);
+    border-color: var(--lighter-bg-color);
   }
 
   #sidebar .nav-list a:hover, #sidebar .nav-list a:focus {
-      color: var(--highlight-fg-color);
+    color: var(--highlight-fg-color);
   }
 
   .articleRatings {
-      background: var(--main-bg-color);
-      border-color: var(--lighter-bg-color);
+    background: var(--main-bg-color);
+    border-color: var(--lighter-bg-color);
   }
 
   #fullArticle hr, hr {
-      border-color: var(--lighter-bg-color);
+    border-color: var(--lighter-bg-color);
   }
 
   #fullArticle strong {
-      color: var(--lighter-fg-color);
+    color: var(--lighter-fg-color);
   }
 
   .category-list h3 {
-      color: var(--light-fg-color);
+    color: var(--light-fg-color);
   }
 
   #docsSearch {
-      background: var(--lighter-bg-color);
-      border-color: var(--border-color);
+    background: var(--lighter-bg-color);
+    border-color: var(--border-color);
   }
 }
