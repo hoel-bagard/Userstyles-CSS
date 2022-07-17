@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Python Morsels Dark Breeze
-@version      0.1.1
+@version      0.1.2
 @namespace    userstyles.world/user/ara
 @description  Dark Theme for Python Morsels
 @author       Hoel
@@ -50,7 +50,7 @@
     visibility: hidden;
   }
 
-  .navbar a:nth-child(2) {
+  .navbar-brand {
     background: url(https://raw.githubusercontent.com/hoel-bagard/Userstyles-CSS/f31d884c93fe4651d9c9a3b140442e792534206a/assets/pythonmorsels_logo_white.svg) no-repeat;
     background-size: contain;
   }
