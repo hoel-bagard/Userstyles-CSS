@@ -119,7 +119,11 @@
     color: #d7a100;
   }
 
-
+  .alert-info {
+    color: var(--main-fg-color);
+    background-color: #00677a;
+    border-color: #0096ad;
+  }
 
   /* || Solve exercise page */
   #results-table { color: white !important; }
