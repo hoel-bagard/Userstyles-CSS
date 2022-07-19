@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Python Morsels Dark Breeze
-@version      0.1.4
+@version      0.1.5
 @namespace    userstyles.world/user/ara
 @description  Dark Theme for Python Morsels
 @author       Hoel
@@ -196,9 +196,10 @@
   .monaco-editor .margin { background-color: var(--code-darker-background-color); }
   .codehilite { background: var(--code-background-color); }
   .monaco-editor .line-numbers.active-line-number { color: var(--light-fg-color); }
-
   /* ||| Solve exercise page: Test Failures */
   pre { color: var(--main-fg-color); }
+  /* ||| Solve exercise page: Solution */
+  code { color: var(--code-red-color); font-weight: bold; }
 
 
 
@@ -244,13 +245,14 @@
 
   /* ||| Code colors for the explanations */
   .codehilite .sd, .codehilite .s2, .codehilite .s1 { color: var(--code-string-color); }
-  .codehilite .nf { color: var(--code-function-def-color); font-weight: bold; }
-  .codehilite .k { color: var(--code-keyword-color); font-weight: bold; }
+  .codehilite .nf, .codehilite .fm { color: var(--code-function-def-color); font-weight: bold; }
+  .codehilite .k, .codehilite .kn, .codehilite .bp { color: var(--code-keyword-color); font-weight: bold; }
   .codehilite .kc { color: var(--code-value-color); font-weight: bold; }
   .codehilite .p, .codehilite .nb, .codehilite .ow { color: var(--code-keyword-color); }
   .codehilite .o, .codehilite .sa, .codehilite .si, .codehilite .n, .codehilite .go, .codehilite .gp, .codehilite .gt { color: var(--code-base-color); }
   .codehilite .nd, .codehilite .gr { color: var(--code-red-color); }
-  code { color: var(--code-base-color) !important; }   /* Some text does not have a class or id */
+  .codehilite .nc { color: var(--code-red-color); font-weight: bold; }  /* Class names */
+  /* code { color: var(--code-base-color) !important; }   /\* Some text does not have a class or id *\/ */
 
   /* ||| Code colors for the "View test file" */
   code[class*="language-"] { background: var(--code-background-color); }
