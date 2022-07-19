@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Python Morsels Dark Breeze
-@version      0.1.3
+@version      0.1.4
 @namespace    userstyles.world/user/ara
 @description  Dark Theme for Python Morsels
 @author       Hoel
@@ -34,7 +34,7 @@
     --code-red-color: #CE537A;  /* decorators, errors */
     --code-function-def-color: #BC6EC5;
     --code-docstring-color: #9F8766;
-
+    --code-line-number: #6c6c6c;
   }
 
   body, html {
@@ -188,7 +188,7 @@
   /* || Solve exercise page */
   #results-table { color: var(--main-fg-color) !important; }
   #results-table .row { border-bottom-color: var(--lighter-bg-color); }
-  .table-success { background-color: var(--green_success); }
+  .table-success { background-color: var(--green-success); }
   .table-danger { background-color: var(--red-failure); }
   /* ||| Solve exercise page: main */
   /* Text editor */
@@ -210,13 +210,29 @@
   .list-group-item-action { color: var(--main-fg-color); }
   .list-group-item { background-color: var(--light-bg-color); }
   .list-group-item-action:focus, .list-group-item-action:hover {
-    color: var(--highlight-fg-color); 
+    color: var(--highlight-fg-color);
     background-color: var(--highlight-bg-color);
   }
 
   .table td, .table th {
     border-top-color: var(--lighter-bg-color);
   }
+
+
+  /* || Snipet page */
+  /* ||| Text editor window */
+  #editor-container, textarea, #terminal { border-color: var(--lighter-bg-color)}
+  .ͼ2 .cm-gutters {
+    background-color: var(--code-darker-background-color);
+    color: var(--code-line-number);
+    border-right: var(--light-bg-color);
+  }
+  .ͼ2 .cm-activeLineGutter { background-color: var(--light-bg-color); }
+  .cm-line:focus, .cm-line:hover { background-color: var(--highlight-bg-color); }
+
+  /* ||| Code colors for the snipets page */
+  .ͼp { color: var(--code-docstring-color); }
+  .ͼo { color: var(--code-keyword-color); }
 
 
   /* || Code colors */
