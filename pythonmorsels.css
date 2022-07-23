@@ -20,6 +20,8 @@
     --highlight-bg-color: hsl(213, 10%, 35%);
     --highlight-fg-color: #eee;
 
+    --link-color: #008aff;
+    --link-highlight-color: #6f95ff;
     --green-success: #126c26;
     --green-button: #0f5c21;
     --green-button-border: #09581b;
@@ -119,7 +121,7 @@
 
   .nav-link:hover,
   .nav-link:focus {
-    color: var(--highlight-fg-color) !important;
+    color: var(--link-highlight-color) !important;
   }
 
   .dropdown-menu.show {
@@ -133,6 +135,11 @@
   .dropdown-item:hover, .dropdown-item:focus {
     color: var(--highlight-fg-color) !important;
     background-color: var(--highlight-bg-color) !important;
+  }
+
+  .alert-info .alert-link,
+  a {
+    color: var(--link-color);
   }
 
   a:hover {
