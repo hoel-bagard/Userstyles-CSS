@@ -20,6 +20,9 @@
     --highlight-bg-color: hsl(213, 10%, 35%);
     --highlight-fg-color: #eee;
 
+    --link-color: #2f94ff;
+    --link-dark-color: #0043c1;
+
     --green-success: #126c26;
     --green-button: #0f5c21;
     --green-button-border: #09581b;
@@ -31,6 +34,7 @@
     --code-keyword-color: #4F97D7;  /* def, self, etc... */
     --code-string-color: #2D9367;
     --code-value-color: #A15BAD;  /* int, None, etc...*/
+    --code-not-implemented-color: #A45BAD;
     --code-red-color: #CE537A;  /* decorators, errors */
     --code-function-def-color: #BC6EC5;
     --code-docstring-color: #9F8766;
@@ -41,6 +45,8 @@
     background: var(--main-bg-color);
     color: var(--main-fg-color);
   }
+
+  a { color: var(--link-color); }
 
   .bg-light {
     background-color: var(--light-bg-color) !important;
@@ -157,10 +163,6 @@
     border-color: #6c6347;
   }
 
-  .alert-warning .alert-link {
-    color: #d7a100;
-  }
-
   .alert-info {
     color: var(--main-fg-color);
     background-color: #00677a;
@@ -173,9 +175,9 @@
     border-color: #3f854f;
   }
 
-  .alert-success .alert-link {
-    color: var(--light-fg-color);
-  }
+  .alert-success .alert-link { color: var(--light-fg-color); }
+  .alert-info .alert-link{ color: var(--link-dark-color); }
+  .alert-warning .alert-link { color: #d7a100; }
 
   .btn-success {
     color: var(--main-fg-color);
@@ -247,6 +249,7 @@
   .codehilite .sd, .codehilite .s2, .codehilite .s1 { color: var(--code-string-color); }
   .codehilite .nf, .codehilite .fm { color: var(--code-function-def-color); font-weight: bold; }
   .codehilite .k, .codehilite .kn, .codehilite .bp { color: var(--code-keyword-color); font-weight: bold; }
+  /* .codehilite .bp { color: var(--code-not-implemented); } /\* sadly NotImplemented and self have share the same class*\/ */
   .codehilite .kc { color: var(--code-value-color); font-weight: bold; }
   .codehilite .p, .codehilite .nb, .codehilite .ow { color: var(--code-keyword-color); }
   .codehilite .o, .codehilite .sa, .codehilite .si, .codehilite .n, .codehilite .go, .codehilite .gp, .codehilite .gt { color: var(--code-base-color); }
