@@ -270,7 +270,7 @@
   /* code { color: var(--code-base-color) !important; }   /\* Some text does not have a class or id *\/ */
 
   /* ||| Code colors for the "View test file" */
-  code[class*="language-"] { background: var(--code-background-color); }
+  code[class*="language-"] { background: var(--code-background-color); color: var(--code-base-color); }
   .token.keyword { color: var(--code-keyword-color); font-weight: bold; }
   .token.class-name { color: var(--code-red-color); font-weight: bold; }
   .triple-quoted-string { color: var(--code-docstring-color) !important; }
