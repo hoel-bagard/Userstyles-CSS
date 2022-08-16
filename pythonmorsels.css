@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Python Morsels Dark Breeze
-@version      0.1.6
+@version      0.1.7
 @namespace    userstyles.world/user/ara
 @description  Dark Theme for Python Morsels
 @author       Hoel
@@ -37,6 +37,7 @@
     --code-value-color: #A15BAD;  /* int, None, etc...*/
     --code-not-implemented-color: #A45BAD;
     --code-red-color: #CE537A;  /* decorators, errors */
+    --code-red-highlight-color: #ad1143;
     --code-function-def-color: #BC6EC5;
     --code-docstring-color: #9F8766;
     --code-line-number: #6c6c6c;
@@ -204,6 +205,7 @@
   #results-table .row { border-bottom-color: var(--lighter-bg-color); }
   .table-success { background-color: var(--green-success); }
   .table-danger { background-color: var(--red-failure); }
+  a:hover > span > code { color: var(--code-red-highlight-color); } /* When code appears in the tips, make it hoverable. */
   /* ||| Solve exercise page: main */
   /* Text editor */
   .monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input { background-color: var(--code-background-color); }
@@ -212,7 +214,7 @@
   .monaco-editor .line-numbers.active-line-number { color: var(--light-fg-color); }
   /* ||| Solve exercise page: Test Failures */
   pre { color: var(--main-fg-color); }
-  /* ||| Solve exercise page: Solution */
+  /* ||| Solve exercise page: Solution   (and a few other places (tips for example))*/
   code { color: var(--code-red-color); font-weight: bold; }
 
 
