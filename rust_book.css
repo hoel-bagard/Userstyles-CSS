@@ -1,6 +1,6 @@
 /* ==UserStyle==
-@name           doc.rust-lang.org
-@namespace      https://doc.rust-lang.org/book/
+@name           Rust Book Dark Breeze
+@namespace      userstyles.world/user/ara
 @version        1.0.0
 @description    Rust book dark breeze
 @author         Hoel
@@ -70,25 +70,23 @@
     background: var(--light-bg-color);
     color: var(--light-fg-color);;
   }
-
   .hljs-title, .hljs-section {
     color: var(--code-function-def-color);
   }
-
   .hljs-attr {
     color: var(--code-attr-color);
   }
   .hljs-string, .hljs-symbol, .hljs-bullet {
     color: var(--code-string-color);
   }
-
   .hljs-keyword, .hljs-selector-tag, .hljs-built_in {
     color: var(--code-keyword-color);
   }
-  .hljs-keyword {
-    font-weight: bold;
-  }
   .hljs-number{
     color: var(--code-value-color);
+  }
+
+  .hljs-keyword, .hljs-title {
+    font-weight: bold;
   }
 }
