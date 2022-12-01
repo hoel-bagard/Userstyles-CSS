@@ -1,0 +1,94 @@
+/* ==UserStyle==
+@name           doc.rust-lang.org
+@namespace      https://doc.rust-lang.org/book/
+@version        1.0.0
+@description    Rust book dark breeze
+@author         Hoel
+==/UserStyle== */
+
+@-moz-document url-prefix("https://doc.rust-lang.org/book/") {
+  :root {
+    /* || Usual dark breeze colors */
+    --main-bg-color: hsl(213, 10%, 17%);
+    --main-fg-color: #bbb;
+    --light-bg-color: hsl(213, 10%, 23%);
+    --light-fg-color: #ccc;
+    --lighter-bg-color: hsl(213, 10%, 29%);
+    --lighter-fg-color: #ddd;
+    --highlight-bg-color: hsl(213, 10%, 35%);
+    --highlight-fg-color: #eee;
+
+    /* || Emacs colors */
+    --code-attr-color: #7590DB;
+    --code-keyword-color: #4F97D7;
+    --code-string-color: #2D9367;
+    --code-value-color: #A45BAD;
+    --code-function-def-color: #BC6EC5;
+
+    /* || Rust book variables */
+    --bg: var(--main-bg-color);
+    --fg: var(--main-fg-color);
+
+    --sidebar-bg: var(--light-bg-color);
+    --sidebar-fg: var(--light-fg-color);
+    --sidebar-non-existant: #505254;
+    --sidebar-active: #3473ad;
+    --sidebar-spacer: #393939;
+
+    --scrollbar: var(--sidebar-fg);
+
+    --icons: #43484d;
+    --icons-hover: #b3c0cc;
+
+    --links: #2b79a2;
+
+    --inline-code-color: #c5c8c6;
+
+    --theme-popup-bg: #141617;
+    --theme-popup-border: #43484d;
+    --theme-hover: #1f2124;
+
+    --quote-bg: hsl(234, 21%, 18%);
+    --quote-border: hsl(234, 21%, 23%);
+
+    --table-border-color: hsl(200, 7%, 13%);
+    --table-header-bg: hsl(200, 7%, 28%);
+    --table-alternate-bg: hsl(200, 7%, 11%);
+
+    --searchbar-border-color: #aaa;
+    --searchbar-bg: #b7b7b7;
+    --searchbar-fg: #000;
+    --searchbar-shadow-color: #aaa;
+    --searchresults-header-fg: #666;
+    --searchresults-border-color: #98a3ad;
+    --searchresults-li-bg: #2b2b2f;
+    --search-mark-bg: #355c7d;
+  }
+
+  /* || Code colors */
+  .hljs {
+    background: var(--light-bg-color);
+    color: var(--light-fg-color);;
+  }
+
+  .hljs-title, .hljs-section {
+    color: var(--code-function-def-color);
+  }
+
+  .hljs-attr {
+    color: var(--code-attr-color);
+  }
+  .hljs-string, .hljs-symbol, .hljs-bullet {
+    color: var(--code-string-color);
+  }
+
+  .hljs-keyword, .hljs-selector-tag, .hljs-built_in {
+    color: var(--code-keyword-color);
+  }
+  .hljs-keyword {
+    font-weight: bold;
+  }
+  .hljs-number{
+    color: var(--code-value-color);
+  }
+}
